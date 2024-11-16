@@ -1,4 +1,4 @@
-import footer from "../assets/footer.png"
+import logo from "../assets/logo.png"
 import facebook from "../assets/facebook.png"
 import instagram from "../assets/instagram.png"
 import linkedin from "../assets/linkedin.png"
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="bg-[#010851] md:px-14 p-4 max-w-screen-2xl mx-auto">
             <div className="my-12 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2 space-y-8">
-                    <a href="/" ><img className='w-32 md:w-64 md:mr-12 ' src={footer} alt="logo" /></a>
+                    <a href="/" ><img className='w-32 md:w-64 md:mr-12 ' src={logo} alt="logo" /></a>
                     <p className="md:w-2/3 text-zinc-500">A simple paragraph is comprised of three major components. The first sentence, which is often a declarative sentence, is called the topic sentence. </p>
                     <div>
                         <input className="bg-[#9a7af159] py-2 px-4 rounded-md focus:outline-none" type="email" id="email" placeholder="Your email"/>
@@ -38,10 +38,10 @@ const Footer = () => {
                     <div className="space-y-4 mt-5">
                         <h4 className="text-xl text-gray-300">Contact</h4>
                         <ul className="space-y-3">
-                            <a href="/" className="block text-gray-300 hover:text-gray-500">(012) 1234-567-890</a>
-                            <a href="/" className="block text-gray-300 hover:text-gray-500">123 xyz xyz</a>
+                            <a href="/" className="block text-gray-300 hover:text-gray-500">22520756@gm.uit.edu.vn</a>
+                            <a href="/" className="block text-gray-300 hover:text-gray-500">22520748@gm.uit.edu.vn</a>
+                            <a href="/" className="block text-gray-300 hover:text-gray-500">22520984@gm.uit.edu.vn</a>
                             <a href="/" className="block text-gray-300 hover:text-gray-500">Q9,HCM</a>
-                            <a href="/" className="block text-gray-300 hover:text-gray-500">095467</a>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const Footer = () => {
             <hr/>
 
             <div className="flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8">
-                <p className="text-gray-300">@ TFLORENTINA 2024. All rights reserved.</p>
+                <p className="text-gray-300">@ EFFORTLESS ENGLISH 2024. All rights reserved.</p>
                 <div className="flex items-center space-x-5">
                     <img src={facebook} className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300" />
                     <img src={instagram} className="w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300"/>

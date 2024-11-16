@@ -11,7 +11,7 @@ const LandingPage = () => {
             <Features />
             <About />
             <Pricing />
-            <Newsletter />
+            {/* <Newsletter />   */}
         </>
     )
 }
