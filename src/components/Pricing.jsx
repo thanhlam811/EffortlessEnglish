@@ -8,6 +8,13 @@ const Pricing = () => {
 
   const checkOut = async (count) => {
     setLoading(true); // Bắt đầu loading
+
+    // Cuộn đến phần #pricing
+    const pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" });
+    }
+
     let productData;
 
     if (count === 1) {
@@ -91,6 +98,14 @@ const Pricing = () => {
 
   return (
     <div className="md:px-14 p-4 max-w-s mx-auto py-10" id="pricing">
+      <div className="text-center">
+        <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2 font-serif">
+          BẢNG GIÁ CHÍNH THỨC{" "}
+        </h2>
+        <p className="text-tartiary md:w-1/3 mx-auto px-4 font-serif">
+          PHIÊN BẢN MỚI NHẤT 2025 - DÀNH CHO BẠN HỌC VIỆT NAM
+        </p>
+      </div>
       {loading ? (
         <div className="loading-container">
           <div className="spinner"></div>
@@ -98,14 +113,6 @@ const Pricing = () => {
         </div> // Hiển thị "Loading..." trong khi đợi dữ liệu
       ) : (
         <>
-          <div className="text-center">
-            <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2 font-serif">
-              BẢNG GIÁ CHÍNH THỨC{" "}
-            </h2>
-            <p className="text-tartiary md:w-1/3 mx-auto px-4 font-serif">
-              PHIÊN BẢN MỚI NHẤT 2025 - DÀNH CHO BẠN HỌC VIỆT NAM
-            </p>
-          </div>
           <motion.div
             id="pricing"
             variants={FadeIn("up", 0.2)}
