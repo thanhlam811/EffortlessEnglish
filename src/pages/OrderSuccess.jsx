@@ -58,9 +58,9 @@ const OrderSuccess = () => {
 
               <div className="w-full space-y-4">
                 <div className="group bg-white/80 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="flex justify-between items-center flex-wrap gap-2">
+                  <div className="flex-col justify-between items-center flex-wrap gap-2">
                     <span className="text-sm md:text-base text-gray-600 font-bold">Mã đơn hàng:</span>
-                    <div className="flex items-center gap-2">
+                    <div className="flex justify-between items-center gap-2">
                       <span className="text-sm md:text-base font-medium break-all">
                         {orderDetails.orderCode}
                       </span>
