@@ -11,13 +11,13 @@ const Footer = () => {
                 <div className="md:w-1/2 space-y-8">
                     <a href="/" ><img className='w-32 md:w-64 md:mr-12 ' src={logo} alt="logo" /></a>
                     <p className="md:w-2/3 text-zinc-500">A simple paragraph is comprised of three major components. The first sentence, which is often a declarative sentence, is called the topic sentence. </p>
-                    <div>
+                    <div className="hidden md:block">
                         <input className="bg-[#9a7af159] py-2 px-4 rounded-md focus:outline-none" type="email" id="email" placeholder="Your email"/>
                         <input type="submit" value="Subscribe" className="py-2 px-4 bg-secondary rounded-md -ml-2 cursor-pointer hover:bg-white hover:text-primary duration-300 transition-all" />
                     </div>
                 </div>
-                <div className="md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between gap-8 items-start">
-                    <div className="space-y-5 mt-5">
+                <div className="md:w-1/2 flex-col md:flex-row flex-wrap justify-between gap-8 items-start flex">
+                    <div className="space-y-5 mt-5 hidden md:block ">
                         <h4 className="text-xl text-gray-300">Platform</h4>
                         <ul className="space-y-3">
                             <a href="/" className="block text-gray-300 hover:text-gray-500">Overview</a>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <a href="/" className="block text-gray-300 hover:text-gray-500">Pricing</a>
                         </ul>
                     </div>
-                    <div className="space-y-4 mt-5">
+                    <div className="space-y-4 mt-5 hidden md:block ">
                         <h4 className="text-xl text-gray-300">Help</h4>
                         <ul className="space-y-3">
                             <a href="/" className="block text-gray-300 hover:text-gray-500">How does it works?</a>
@@ -41,7 +41,6 @@ const Footer = () => {
                             <a href="/" className="block text-gray-300 hover:text-gray-500">22520756@gm.uit.edu.vn</a>
                             <a href="/" className="block text-gray-300 hover:text-gray-500">22520748@gm.uit.edu.vn</a>
                             <a href="/" className="block text-gray-300 hover:text-gray-500">22520984@gm.uit.edu.vn</a>
-                            <a href="/" className="block text-gray-300 hover:text-gray-500">Q9,HCM</a>
                         </ul>
                     </div>
                 </div>
