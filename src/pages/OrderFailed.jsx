@@ -122,7 +122,10 @@ const OrderFailed = () => {
           )}
 
           <button 
-            onClick={() => window.location.href = '/'}
+            onClick={() => {
+              localStorage.removeItem("item")
+              window.location.href = '/'
+            }}
             className="w-full bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white py-3.5 px-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-sm md:text-base flex items-center justify-center gap-2 group"
           >
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />

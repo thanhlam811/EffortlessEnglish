@@ -37,6 +37,7 @@ const Pricing = () => {
     }
 
     try {
+      localStorage.setItem("item", JSON.stringify(productData));
       const response = await fetch(
         "https://spring-render-c3hj.onrender.com/create-payment-link",
         {
