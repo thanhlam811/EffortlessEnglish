@@ -86,17 +86,25 @@ const Banner = ({ banner, heading, subheading, subheading1, btn1, btn2 }) => {
             {subheading}
           </motion.p>
 
-          <p className="text-base md:text-lg text-[#EBEBEB] pb-6 font-serif">{subheading1}</p>
-
+          <motion.p
+            className="text-base md:text-lg text-[#EBEBEB] pb-6 font-serif"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isHeadingComplete ? 1 : 0 }} // Điều khiển opacity của subheading
+            transition={{ duration: 0.5 }} // Thêm thời gian hiệu ứng
+          >
+         {subheading1}
+          </motion.p>
           <div className="space-x-5 space-y-4">
             <a href="#pricing">
-              <button className="btnPrimary">{btn1}</button>
+              <motion.button
+            className="btnPrimary"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isHeadingComplete ? 1 : 0 }} // Điều khiển opacity của subheading
+            transition={{ duration: 0.5 }} // Thêm thời gian hiệu ứng
+          >
+          {btn1}
+          </motion.button>
             </a>
-            {btn2 && (
-              <a href="#pricing">
-                <button className="btnPrimary">{btn2}</button>
-              </a>
-            )}
           </div>
         </motion.div>
       </div>
