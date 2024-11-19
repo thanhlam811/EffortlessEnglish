@@ -11,6 +11,7 @@ const Home = () => {
         subheading1="Đăng ký mua bộ chương trình bài học Effortless English ngay hôm nay để có thể nói tiếng Anh dễ dàng, tự tin và trôi chảy sau 6 tháng."
         btn1={"KHÁM PHÁ NGAY"}
       />
+      
     </div>
   );
 };
