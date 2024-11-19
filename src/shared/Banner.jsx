@@ -36,7 +36,7 @@ const Banner = ({ banner, heading, subheading, subheading1, btn1, btn2 }) => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="glow-container w-2/3 md:w-full"
+          className="glow-container w-2/3 md:w-3/4"
         >
           <motion.img
             src={banner}
@@ -51,7 +51,7 @@ const Banner = ({ banner, heading, subheading, subheading1, btn1, btn2 }) => {
           variants={FadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.1 }}
           className="md:w-3/5"
         >
          <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 leading-relaxed font-sans">
