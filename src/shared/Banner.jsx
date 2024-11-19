@@ -54,7 +54,7 @@ const Banner = ({ banner, heading, subheading, subheading1, btn1, btn2 }) => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="glow-container w-2/3 md:w-3/4"
+          className="glow-container w-2/3 md:w-3/4 flex justify-center"
         >
           <motion.img
             src={banner}
